@@ -4,7 +4,7 @@
 
 ## Description
 Ce projet a été réalisé dans le cadre d'un exercice scolaire à la [HEPL](https://www.hepl.be/).  
-L’objectif est de reproduire un site web sous la forme d’un **CV interactif** en utilisant les technologies front-end modernes.
+L’objectif est de reproduire un site web sous la forme d’un **CV interactif** en utilisant les technologies apprises en cours.
 
 ## 🎯 Objectifs du projet
 - Apprendre et appliquer les bases du développement web (HTML, CSS, JavaScript).
