@@ -1,19 +1,17 @@
 <!doctype html>
-<html lang=fr>
+<html lang="fr" itemscope itemtype="http://schema.org/WebPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="./img/raton.png">
-
     <title>DSN&lt;/&gt;WEB | Jean Royen</title>
 </head>
 <body>
 <header>
     <nav>
         <div class="title">
-            <!--Re faire en SVG-->
             <a href="#"><img src="img/header_logo.svg" alt="Lettres IMMOWEB en bleu"></a>
         </div>
         <div>
@@ -29,15 +27,15 @@
     </nav>
 </header>
 <main>
-    <div>
+    <div itemscope itemtype="http://schema.org/Person">
         <section>
-            <h1>
+            <h1 itemprop="name">
                 Jean Royen
             </h1>
-            <p>
+            <p itemprop="jobTitle">
                 Junior Web Developer
             </p>
-            <span>
+            <span itemprop="description">
                 Étudiant infographie, option design web
             </span>
         </section>
@@ -46,22 +44,26 @@
         </section>
     </div>
     <div>
-        <figure>
-            <img src="/img/1_jean.png" alt="Image d'un homme brun avec un pull vert" width="610" height="340">
+        <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+            <img src="/img/1_jean.png" alt="Image d'un homme brun avec un pull vert" width="610" height="340"
+                 itemprop="url">
         </figure>
-        <figure>
-            <img src="/img/2_jean.png" alt="Image d'un homme brun avec un pull vert" width="190" height="100">
+        <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+            <img src="/img/2_jean.png" alt="Image d'un homme brun avec un pull vert" width="190" height="100"
+                 itemprop="url">
         </figure>
-        <figure>
-            <img src="/img/2_jean.png" alt="Image d'un homme brun avec un pull vert" width="190" height="100">
+        <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+            <img src="/img/2_jean.png" alt="Image d'un homme brun avec un pull vert" width="190" height="100"
+                 itemprop="url">
         </figure>
-        <figure>
-            <img src="/img/2_jean.png" alt="Image d'un homme brun avec un pull vert" width="190" height="100">
+        <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+            <img src="/img/2_jean.png" alt="Image d'un homme brun avec un pull vert" width="190" height="100"
+                 itemprop="url">
         </figure>
     </div>
     <div class="utilities">
         <p><a href="#" title="Redirige vers la page de statistiques">Connectez-vous pour voir les statistiques de ce
-            developpeur</a></p>
+            développeur</a></p>
         <p><a href="#" title="Redirige vers la page de signalement">Signalement</a></p>
         <p><a href="#" title="Redirige vers la page d'impression">Imprimer</a></p>
     </div>
@@ -69,21 +71,21 @@
         <section>
             <h2>Ma stack technologique</h2>
             <ul>
-                <li><span><abbr title="HyperText Markup Langage">HTML</abbr>/<abbr
+                <li><span itemprop="knowsAbout"><abbr title="HyperText Markup Langage">HTML</abbr>/<abbr
                         title="Cascading StyleSheet">CSS</abbr></span></li>
-                <li><span><abbr title="Structured Query Langage">SQL</abbr></span></li>
-                <li><span><abbr title="JavaScript">JS</abbr></span></li>
-                <li><span><abbr title="Hypertext Preprocessor">PHP</abbr></span></li>
+                <li><span itemprop="knowsAbout"><abbr title="Structured Query Langage">SQL</abbr></span></li>
+                <li><span itemprop="knowsAbout"><abbr title="JavaScript">JS</abbr></span></li>
+                <li><span itemprop="knowsAbout"><abbr title="Hypertext Preprocessor">PHP</abbr></span></li>
             </ul>
         </section>
     </div>
     <div class="description">
         <section>
             <h2>Description</h2>
-            <p>Je m’appelle Jean Royen et je suis développeur web junior en pleine formation. Passionné par le monde du
-                web, je me forme activement aux langages fondamentaux comme JavaScript,
-                <abbr title="HyperText Markup Langage">HTML</abbr>, <abbr title="Cascading StyleSheet">CSS</abbr> ,<abbr
-                        title="Structured Query Langage">SQL</abbr> et <abbr title="Hypertext Preprocessor">PHP</abbr>
+            <p itemprop="description">Je m’appelle Jean Royen et je suis développeur web junior en pleine formation.
+                Passionné par le monde du web, je me forme activement aux langages fondamentaux comme JavaScript, <abbr
+                        title="HyperText Markup Langage">HTML</abbr>, <abbr title="Cascading StyleSheet">CSS</abbr>,
+                <abbr title="Structured Query Langage">SQL</abbr> et <abbr title="Hypertext Preprocessor">PHP</abbr>
                 afin de maîtriser aussi bien le frontend que le backend.
 
                 Mon objectif est de devenir un développeur capable de concevoir des applications web modernes,
@@ -98,7 +100,7 @@
                 <tbody>
                 <tr>
                     <th>Date de naissance</th>
-                    <td>24 mars 2000</td>
+                    <td itemprop="birthDate">24 mars 2000</td>
                 </tr>
                 <tr>
                     <th>Âge</th>
@@ -106,11 +108,11 @@
                 </tr>
                 <tr>
                     <th>Lieu de naissance</th>
-                    <td>Rocourt</td>
+                    <td itemprop="birthPlace">Rocourt</td>
                 </tr>
                 <tr>
                     <th>Niveau de diplôme</th>
-                    <td>Bachelier</td>
+                    <td itemprop="hasCredential">Bachelier</td>
                 </tr>
                 <tr>
                     <th>Permis voiture</th>
@@ -118,28 +120,28 @@
                 </tr>
                 <tr>
                     <th>Adresse mail</th>
-                    <td>jean.royen@student.hepl.be</td>
+                    <td itemprop="email">jean.royen@student.hepl.be</td>
                 </tr>
                 <tr>
                     <th>Numéro de téléphone</th>
-                    <td>0471 42 08 54</td>
+                    <td itemprop="telephone">0471 42 08 54</td>
                 </tr>
                 <tr>
                     <th>Adresse</th>
-                    <td>Village des Cahottes, Flémalle</td>
+                    <td itemprop="address">Village des Cahottes, Flémalle</td>
                 </tr>
                 </tbody>
             </table>
         </section>
     </div>
-    <div class="jysk">
+    <div class="jysk" itemscope itemtype="http://schema.org/JobPosting">
         <section>
             <h2>JYSK</h2>
             <table>
                 <tbody>
                 <tr>
                     <th>Date de début</th>
-                    <td>1 aout 2024</td>
+                    <td itemprop="datePosted">1 août 2024</td>
                 </tr>
                 <tr>
                     <th>Date de fin</th>
@@ -147,15 +149,15 @@
                 </tr>
                 <tr>
                     <th>Intitulé du job</th>
-                    <td>Étudiant</td>
+                    <td itemprop="title">Étudiant</td>
                 </tr>
                 <tr>
                     <th>Objectif</th>
-                    <td>Gestion du stock/Service client</td>
+                    <td itemprop="responsibilities">Gestion du stock/Service client</td>
                 </tr>
                 <tr>
                     <th>Secteur</th>
-                    <td>Vente de meuble</td>
+                    <td itemprop="industry">Vente de meuble</td>
                 </tr>
                 <tr>
                     <th>Equipement logistique</th>
@@ -189,30 +191,30 @@
             </table>
         </section>
     </div>
-    <div class="jc1">
+    <div class="jc1" itemscope itemtype="http://schema.org/JobPosting">
         <section>
             <h2>John Cockerill</h2>
             <table>
                 <tbody>
                 <tr>
                     <th>Date de début</th>
-                    <td>1 juillet 2022</td>
+                    <td itemprop="datePosted">1 juillet 2022</td>
                 </tr>
                 <tr>
                     <th>Date de fin</th>
-                    <td>31 aout 2022</td>
+                    <td>31 août 2022</td>
                 </tr>
                 <tr>
                     <th>Intitulé du job</th>
-                    <td>Étudiant</td>
+                    <td itemprop="title">Étudiant</td>
                 </tr>
                 <tr>
                     <th>Objectif</th>
-                    <td>Gestion du stock/Inventaire</td>
+                    <td itemprop="responsibilities">Gestion du stock/Inventaire</td>
                 </tr>
                 <tr>
                     <th>Secteur</th>
-                    <td>Mécanique</td>
+                    <td itemprop="industry">Mécanique</td>
                 </tr>
                 <tr>
                     <th>Equipement logistique</th>
@@ -246,30 +248,30 @@
             </table>
         </section>
     </div>
-    <div class="jc2">
+    <div class="jc2" itemscope itemtype="http://schema.org/JobPosting">
         <section>
             <h2>John Cockerill</h2>
             <table>
                 <tbody>
                 <tr>
                     <th>Date de début</th>
-                    <td>1 juillet 2019</td>
+                    <td itemprop="datePosted">1 juillet 2019</td>
                 </tr>
                 <tr>
                     <th>Date de fin</th>
-                    <td>31 aout 2019</td>
+                    <td>31 août 2019</td>
                 </tr>
                 <tr>
                     <th>Intitulé du job</th>
-                    <td>Étudiant</td>
+                    <td itemprop="title">Étudiant</td>
                 </tr>
                 <tr>
                     <th>Objectif</th>
-                    <td>Gestion de dossier contrôle qualité</td>
+                    <td itemprop="responsibilities">Gestion de dossier contrôle qualité</td>
                 </tr>
                 <tr>
                     <th>Secteur</th>
-                    <td>Nucléaire/Administratif</td>
+                    <td itemprop="industry">Nucléaire/Administratif</td>
                 </tr>
                 <tr>
                     <th>Equipement logistique</th>
@@ -303,24 +305,24 @@
             </table>
         </section>
     </div>
-    <div class="hepl">
+    <div class="hepl" itemscope itemtype="http://schema.org/EducationalOrganization">
         <section>
             <h2>HEPL Seraing</h2>
-            <p>La haute école de Seraing est prête à forger votre avenir avec vous sur le campus du parc des Marêts</p>
+            <p itemprop="description">La haute école de Seraing est prête à forger votre avenir avec vous sur le campus
+                du parc des Marêts</p>
             <table>
                 <tbody>
                 <tr>
                     <th>Diplôme maximum</th>
-                    <td>Bachelier</td>
+                    <td itemprop="knowsAbout">Bachelier</td>
                 </tr>
                 <tr>
                     <th>Section</th>
-                    <td>Informatique/Infographie</td>
+                    <td itemprop="department">Informatique/Infographie</td>
                 </tr>
                 </tbody>
             </table>
             <figure>
-                <!-- Remplacer par une image de la HEPL, fausse publicité-->
                 <img src="img/mortgage-banner-558x182-fr.jpg" alt="">
             </figure>
         </section>
@@ -360,7 +362,7 @@
                     </fieldset>
                     <div>
                         <div>
-                        <label for="message">Votre message</label>
+                            <label for="message">Votre message</label>
                         </div>
                         <div>
                             <textarea name="message" id="message" cols="30" rows="10"></textarea>
@@ -371,7 +373,8 @@
                             <input type="checkbox" id="after_message">
                             <label for="after_message">Envoyez-moi une copie de l'email</label>
                         </fieldset>
-                        <span>En cliquant sur ENVOYER MA DEMANDE, j'accepte que les données fournies dans ce formulaire soient transmises par Immoweb à l'annonceur qui les utilisera pour répondre à ma demande. <a href="#">Plus d'informations</a></span>
+                        <span>En cliquant sur ENVOYER MA DEMANDE, j'accepte que les données fournies dans ce formulaire soient transmises par Immoweb à l'annonceur qui les utilisera pour répondre à ma demande. <a
+                                href="#">Plus d'informations</a></span>
                     </div>
                     <div>
                         <button>Envoyer ma demande</button>
