@@ -1,0 +1,108 @@
+// Variables
+$main-blue-text: rgb(19, 61, 189);
+$small: 600px;
+$medium: 1023px;
+$large: 1439px;
+$xlarge: 1440px;
+$font-family: "Arial", sans-serif;
+$nav-height: 3.5rem;
+
+// Styles
+
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding-top: $nav-height;
+}
+
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &_nav {
+    min-height: $nav-height;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &_logo {
+      height: 54px;
+      margin-right: 2rem;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    &_menu {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin: 0 0.625rem;
+          position: relative;
+
+          a {
+            color: $main-blue-text;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              border-bottom: 2px solid $main-blue-text
+            }
+
+            &:active {
+              background-color: rgba($main-blue-text, 0.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: $medium) {
+  .top {
+    &_nav {
+      flex-direction: column;
+      padding: 1rem;
+
+      &_logo {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+
+      &_menu {
+        flex-direction: column;
+        gap: 10px;
+
+        ul {
+          flex-direction: column;
+          align-items: center;
+
+          li {
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}

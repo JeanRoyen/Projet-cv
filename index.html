@@ -7,27 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="./img/raton.png">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
     <title>DSN&lt;/&gt;WEB | Jean Royen</title>
 </head>
 <body>
 <header>
     <div class="top">
-        <nav class="top_nav">
-            <div class="top_nav_logo">
-                <a href="#"><img src="img/header_logo.svg" alt="Lettres IMMOWEB en bleu"></a>
-            </div>
-            <div class="top_nav_menu">
-                <ul class="main_nav">
-                    <li><a href="#" title="Redirige vers à vendre">À vendre</a></li>
-                    <li><a href="#" title="Redirige vers à louer">À louer</a></li>
-                    <li><a href="#" title="Redirige vers estimer">Estimer</a></li>
-                    <li><a href="#" title="Redirige vers services">Services</a></li>
-                </ul>
-                <ul class="login_nav_menu">
-                    <li><a href="#" title="Redirige vers publier une annonce">Publier une annonce</a></li>
-                    <li><a href="#" title="Redirige vers se connecter">Se connecter</a></li>
-                </ul>
+        <nav>
+            <div class="top_nav">
+                <div class="top_nav_logo">
+                    <a href="#"><img src="img/header_logo.svg" alt="Lettres IMMOWEB en bleu"></a>
+                </div>
+                <div class="top_nav_menu">
+                    <ul class="main_nav">
+                        <li><a href="#" title="Redirige vers à vendre">À vendre</a></li>
+                        <li><a href="#" title="Redirige vers à louer">À louer</a></li>
+                        <li><a href="#" title="Redirige vers estimer">Estimer</a></li>
+                        <li><a href="#" title="Redirige vers services">Services</a></li>
+                    </ul>
+                    <ul class="login_nav_menu">
+                        <li><a href="#" title="Redirige vers publier une annonce">Publier une annonce</a></li>
+                        <li><a href="#" title="Redirige vers se connecter">Se connecter</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
@@ -77,23 +79,22 @@
         <section>
             <h2>Ma stack technologique</h2>
             <ul>
-                <li><span itemprop="knowsAbout"><abbr title="HyperText Markup Langage">HTML</abbr>/<abbr
+                <li><span><abbr title="HyperText Markup Langage">HTML</abbr>/<abbr
                         title="Cascading StyleSheet">CSS</abbr></span></li>
-                <li><span itemprop="knowsAbout"><abbr title="Structured Query Langage">SQL</abbr></span></li>
-                <li><span itemprop="knowsAbout"><abbr title="JavaScript">JS</abbr></span></li>
-                <li><span itemprop="knowsAbout"><abbr title="Hypertext Preprocessor">PHP</abbr></span></li>
+                <li><span><abbr title="Structured Query Langage">SQL</abbr></span></li>
+                <li><span><abbr title="JavaScript">JS</abbr></span></li>
+                <li><span><abbr title="Hypertext Preprocessor">PHP</abbr></span></li>
             </ul>
         </section>
     </div>
     <div class="description">
         <section>
             <h2>Description</h2>
-            <p itemprop="description">Je m’appelle Jean Royen et je suis développeur web junior en pleine formation.
+            <p>Je m’appelle Jean Royen et je suis développeur web junior en pleine formation.
                 Passionné par le monde du web, je me forme activement aux langages fondamentaux comme JavaScript, <abbr
                         title="HyperText Markup Langage">HTML</abbr>, <abbr title="Cascading StyleSheet">CSS</abbr>,
                 <abbr title="Structured Query Langage">SQL</abbr> et <abbr title="Hypertext Preprocessor">PHP</abbr>
                 afin de maîtriser aussi bien le frontend que le backend.
-
                 Mon objectif est de devenir un développeur capable de concevoir des applications web modernes,
                 performantes et intuitives. J’accorde une grande importance aux bonnes pratiques du développement,
                 notamment l’optimisation du code, l’accessibilité et la sécurité.</p>
@@ -102,7 +103,7 @@
     <div class="general">
         <section>
             <h2>Général</h2>
-            <table>
+            <table itemscope itemtype="http://schema.org/Person">
                 <tbody>
                 <tr>
                     <th>Date de naissance</th>
@@ -134,7 +135,10 @@
                 </tr>
                 <tr>
                     <th>Adresse</th>
-                    <td itemprop="address">Village des Cahottes, Flémalle</td>
+                    <td itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">Village des Cahottes</span>,
+                        <span itemprop="addressLocality">Flémalle</span>
+                    </td>
                 </tr>
                 </tbody>
             </table>
@@ -391,7 +395,6 @@
     </div>
 </main>
 <footer>
-
 </footer>
 </body>
 </html>
