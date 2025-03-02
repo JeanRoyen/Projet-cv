@@ -15,6 +15,21 @@ body {
   padding-top: $nav-height;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
 .top {
   position: fixed;
   top: 0;
