@@ -1,12 +1,18 @@
 // Variables
 $main-blue-text: rgb(19, 61, 189);
 $dark-blue: rgb(8, 36, 121);
+$light-grey: rgb(243, 245, 250);
+$mid-grey: rgb(99, 105, 125);
+$mid-green : rgb(101, 215, 141);
+
 $small: 600px;
 $medium: 1023px;
 $large: 1439px;
 $xlarge: 1440px;
+
 $font-family: "Arial", sans-serif;
 $nav-height: 3.5rem;
+$bold: 700;
 
 // Styles
 
@@ -19,7 +25,59 @@ body {
 h2 {
   font-size: 1.5rem;
   color: $dark-blue;
-  font-weight: 700;
+  font-weight: $bold;
+}
+
+h3 {
+  color: $dark-blue;
+  font-size: 1.5rem;
+  font-weight: $bold;
+}
+table {
+  width: 100%;
+}
+
+tr {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  text-align: left;
+  width: 100%;
+}
+
+th {
+  width: 50%;
+  font-size: 1rem;
+  color: $mid-grey;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+td {
+  width: 50%;
+  font-size: 1rem;
+  color: $mid-grey;
+  font-weight: $bold;
+  line-height: 1.375rem;
+  padding-left: .625rem;
+}
+
+button {
+  padding: .5625rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  background-color: $mid-green;
+  color: $dark-blue;
+  font-weight: $bold;
+  border-radius: 1.375rem;
+  border: 0;
+}
+
+.bg_grey {
+  background-color: $light-grey;
+}
+
+.container_title {
+  width: 71.25rem;
 }
 
 .hidden {
@@ -34,8 +92,20 @@ h2 {
 
 .title {
   display: flex;
+  align-items: center;
+  line-height: 1.75rem;
+  justify-content: space-between;
 }
 
+
+.title_job {
+  font-size: 1.875rem;
+}
+
+.container_title {
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+}
 
 .top {
   position: fixed;
