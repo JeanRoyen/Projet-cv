@@ -25,6 +25,18 @@ header {
   margin: 0 10%;
 }
 
+.img_container {
+  display: flex;
+  gap: .5rem;
+  margin: .5rem 10% 0 10%;
+}
+
+.img_small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 h2 {
   font-size: 1.5rem;
   color: $dark-blue;
@@ -90,10 +102,6 @@ button {
 .main_nav {
   display: flex;
   justify-content: space-between;
-}
-
-.bg_grey {
-  background-color: $light-grey;
 }
 
 .hidden {
