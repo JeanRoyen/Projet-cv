@@ -3,7 +3,7 @@ $main-blue-text: rgb(19, 61, 189);
 $dark-blue: rgb(8, 36, 121);
 $light-grey: rgb(243, 245, 250);
 $mid-grey: rgb(99, 105, 125);
-$mid-green : rgb(101, 215, 141);
+$mid-green: rgb(101, 215, 141);
 
 $small: 600px;
 $medium: 1023px;
@@ -18,8 +18,11 @@ $bold: 700;
 
 body {
   font-family: $font-family;
-  margin: 0;
   padding-top: $nav-height;
+}
+
+header {
+  margin: 0 10%;
 }
 
 h2 {
@@ -33,6 +36,7 @@ h3 {
   font-size: 1.5rem;
   font-weight: $bold;
 }
+
 table {
   width: 100%;
 }
@@ -72,12 +76,24 @@ button {
   border: 0;
 }
 
-.bg_grey {
-  background-color: $light-grey;
+.generalJobTitle {
+  color: $main-blue-text;
+  font-size: .875rem;
 }
 
-.container_title {
-  width: 71.25rem;
+.description {
+  font-size: 1rem;
+  color: $dark-blue;
+  line-height: 1.6rem;
+}
+
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg_grey {
+  background-color: $light-grey;
 }
 
 .hidden {
@@ -90,110 +106,73 @@ button {
   width: 1px;
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  line-height: 1.75rem;
-  justify-content: space-between;
+.container_title {
+  margin: 0 10%;
+  padding: 5vh 0;
 }
-
 
 .title_job {
   font-size: 1.875rem;
+  font-weight: $bold;
+  color: $dark-blue;
+  line-height: 2rem;
 }
 
-.container_title {
-  margin-left: 7.5rem;
-  margin-right: 7.5rem;
+.title {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.top_nav_menu {
+  flex-grow: 1;
 }
 
 .top {
   position: fixed;
+  padding: 0 10%;
+  width: 80%;
   top: 0;
   left: 0;
   z-index: 9999;
   background-color: white;
-  width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   &_nav {
     min-height: $nav-height;
     display: flex;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
 
     &_logo {
       height: 54px;
       margin-right: 2rem;
 
-      img {
-        height: 100%;
+      svg {
+        height: 95%;
         width: auto;
       }
     }
 
-    &_menu {
-      display: flex;
-      gap: 20px;
-      align-items: center;
+    li {
+      position: relative;
 
-      ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+      a {
+        color: $main-blue-text;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 1rem 1rem;
+        transition: background-color 0.3s ease;
 
-        li {
-          margin: 0 0.625rem;
-          position: relative;
+        &:hover {
+          border-bottom: 2px solid $main-blue-text
+        }
 
-          a {
-            color: $main-blue-text;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 1rem 1rem;
-            transition: background-color 0.3s ease;
-
-            &:hover {
-              border-bottom: 2px solid $main-blue-text
-            }
-
-            &:active {
-              background-color: rgba($main-blue-text, 0.2);
-            }
-          }
+        &:active {
+          background-color: rgba($main-blue-text, 0.2);
         }
       }
     }
   }
 }
 
-// Responsive Design
-@media (max-width: $medium) {
-  .top {
-    &_nav {
-      flex-direction: column;
-      padding: 1rem;
-
-      &_logo {
-        margin-right: 0;
-        margin-bottom: 1rem;
-      }
-
-      &_menu {
-        flex-direction: column;
-        gap: 10px;
-
-        ul {
-          flex-direction: column;
-          align-items: center;
-
-          li {
-            margin: 0.5rem 0;
-          }
-        }
-      }
-    }
-  }
-}
