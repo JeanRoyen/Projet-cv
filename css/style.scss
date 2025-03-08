@@ -4,6 +4,7 @@ $dark-blue: rgb(8, 36, 121);
 $light-grey: rgb(243, 245, 250);
 $mid-grey: rgb(99, 105, 125);
 $mid-green: rgb(101, 215, 141);
+$border-blue-field: rgb(49, 94, 209);
 
 $small: 600px;
 $medium: 1023px;
@@ -56,8 +57,9 @@ h3 {
 }
 
 table {
-  width: 40%;
+  min-width: 50%;
 }
+
 
 tr {
   font-size: 1rem;
@@ -92,6 +94,47 @@ button {
   font-weight: $bold;
   border-radius: 1.375rem;
   border: 0;
+}
+
+form {
+  width: 50%;
+}
+
+label {
+  color: $mid-grey;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.125rem;
+}
+
+input {
+  line-height: 2.375rem;
+  border: $border-blue-field solid 1px;
+  background-color: $light-grey;
+  width: calc(100% - (1.5rem + 2px));
+  padding: 0 .75rem;
+  border-radius: .5rem;
+}
+
+.names {
+  display: flex;
+  gap: 2rem;
+}
+
+.field_row {
+  flex-direction: row;
+  width: 100%;
+}
+
+.p_add {
+  width: 40%;
+  margin-bottom: 1rem;
+  color: $mid-grey;
+}
+
+.names input{
+  gap: 3px;
 }
 
 .section_description {
@@ -200,4 +243,7 @@ button {
     }
   }
 }
+
+
+
 
